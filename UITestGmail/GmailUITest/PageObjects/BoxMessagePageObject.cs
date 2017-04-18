@@ -31,22 +31,29 @@ namespace GmailUITest
         public GmailMessagesPageObject FillMessageFormAndSend(string emailReciever, string messageSubject, string messageValue)
         {
             Thread.Sleep(2000);
+            try
+            {
+                txtEmailReciever.Click();
 
-            txtEmailReciever.Click();
+                txtEmailReciever.EnterText(emailReciever);
 
-            txtEmailReciever.EnterText(emailReciever);
+                txtMessageSubject.EnterText(messageSubject);
 
-            txtMessageSubject.EnterText(messageSubject);
+                txtMessage.Click();
 
-            txtMessage.Click();
+                txtMessage.EnterText(messageValue);
 
-            txtMessage.EnterText(messageValue);
+                btnSend.Click();
 
-            btnSend.Click();
+                Thread.Sleep(2000);
 
-            Thread.Sleep(2000);
-
-            Assert.AreEqual("Your message has been sent. View message", PropertiesCollection.driver.FindElement(By.ClassName("vh")).Text);
+                Assert.AreEqual("Your message has been sent. View message", PropertiesCollection.driver.FindElement(By.ClassName("vh")).Text);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                Console.WriteLine("Message wasn't sended");
+            }
 
             return new GmailMessagesPageObject();
         }

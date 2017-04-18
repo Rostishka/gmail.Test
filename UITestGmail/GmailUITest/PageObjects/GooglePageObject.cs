@@ -17,31 +17,31 @@ namespace GmailUITest
         public IWebElement txtSearchField { get; set; }
 
         [FindsBy(How = How.LinkText, Using = "Gmail - Google")]
-        public IWebElement txtGmailSingIn { get; set; }
+        public IWebElement txtGmail { get; set; }
 
         [FindsBy(How = How.Id, Using = "_fZl")]
         public IWebElement btnSearch { get; set; }
 
-        public EmailPageObject TextAndPressButton(string searchText)
+        public EmailPageObject WriteTextAndPressSearchButton(string searchText)
         {
-            txtSearchField.EnterText(searchText);
-
-            btnSearch.Click();
-
-            Thread.Sleep(3000);
-
-            txtGmailSingIn.Click();
-
-            Thread.Sleep(5000);
-
             try
             {
+                txtSearchField.EnterText(searchText);
+
+                btnSearch.Click();
+
+                Thread.Sleep(3000);
+
+                txtGmail.Click();
+
+                Thread.Sleep(5000);
+
                 Assert.AreEqual("Gmail", PropertiesCollection.driver.Title);
             }
-            catch (NoSuchWindowException ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex);
-                Console.WriteLine("Unfamiliar window");
+                Console.WriteLine("Invalid window");
                 PropertiesCollection.driver.Quit();
             }
 

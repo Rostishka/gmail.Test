@@ -1,4 +1,5 @@
-﻿using System.Threading;
+﻿using System;
+using System.Threading;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
 
@@ -18,14 +19,23 @@ namespace GmailUITest
         public IWebElement btnNext { get; set; }
 
 
-        public PassPageObject FillEmail(string userEmail)
+        public PassPageObject FillEmailForm(string userEmail)
         {
-            txtEmail.EnterText(userEmail);
+            try
+            {
+                txtEmail.EnterText(userEmail);
 
-            btnNext.ClickOn();
+                btnNext.ClickOn();
 
-            Thread.Sleep(3000);
-
+                Thread.Sleep(3000);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                Console.WriteLine("Can't click the Next button");
+                PropertiesCollection.driver.Quit();
+            }
+         
             return new PassPageObject();
         }
     }

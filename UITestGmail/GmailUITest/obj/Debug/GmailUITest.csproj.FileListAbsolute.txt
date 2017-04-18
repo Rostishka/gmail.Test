@@ -9,3 +9,14 @@ E:\щтоу\OneDrive\Documents\Visual Studio 2017\Projects\UITestGmail\GmailUITe
 E:\щтоу\OneDrive\Documents\Visual Studio 2017\Projects\UITestGmail\GmailUITest\obj\Debug\GmailUITest.csprojResolveAssemblyReference.cache
 E:\щтоу\OneDrive\Documents\Visual Studio 2017\Projects\UITestGmail\GmailUITest\obj\Debug\GmailUITest.dll
 E:\щтоу\OneDrive\Documents\Visual Studio 2017\Projects\UITestGmail\GmailUITest\obj\Debug\GmailUITest.pdb
+E:\щтоу\OneDrive\Documents\gmail.Test\UITestGmail\GmailUITest\bin\Debug\GmailUITest.dll
+E:\щтоу\OneDrive\Documents\gmail.Test\UITestGmail\GmailUITest\bin\Debug\GmailUITest.pdb
+E:\щтоу\OneDrive\Documents\gmail.Test\UITestGmail\GmailUITest\bin\Debug\nunit.framework.dll
+E:\щтоу\OneDrive\Documents\gmail.Test\UITestGmail\GmailUITest\bin\Debug\WebDriver.dll
+E:\щтоу\OneDrive\Documents\gmail.Test\UITestGmail\GmailUITest\bin\Debug\WebDriver.Support.dll
+E:\щтоу\OneDrive\Documents\gmail.Test\UITestGmail\GmailUITest\bin\Debug\nunit.framework.xml
+E:\щтоу\OneDrive\Documents\gmail.Test\UITestGmail\GmailUITest\bin\Debug\WebDriver.xml
+E:\щтоу\OneDrive\Documents\gmail.Test\UITestGmail\GmailUITest\bin\Debug\WebDriver.Support.xml
+E:\щтоу\OneDrive\Documents\gmail.Test\UITestGmail\GmailUITest\obj\Debug\GmailUITest.csprojResolveAssemblyReference.cache
+E:\щтоу\OneDrive\Documents\gmail.Test\UITestGmail\GmailUITest\obj\Debug\GmailUITest.dll
+E:\щтоу\OneDrive\Documents\gmail.Test\UITestGmail\GmailUITest\obj\Debug\GmailUITest.pdb

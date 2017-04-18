@@ -9,13 +9,13 @@ namespace GmailUITest
     {
         public GmailPageObject()
         {
-            PageFactory.InitElements(PropertiesCollection.driver, this);//this - to initialise this page
+            PageFactory.InitElements(PropertiesCollection.driver, this);
         }
 
         [FindsBy(How = How.CssSelector, Using = ".aic div[role='button']")]
         public IWebElement btnCompose { get; set; }
 
-        public BoxMessagePageObject PressWriteButton()
+        public BoxMessagePageObject PressComposeButton()
         {
             try
             {

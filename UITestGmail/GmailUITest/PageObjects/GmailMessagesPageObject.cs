@@ -13,7 +13,7 @@ namespace GmailUITest
             PageFactory.InitElements(PropertiesCollection.driver, this);
         }
 
-        public void FindUnreadMail(string subject)
+        public void FindEMail(string subject)
         {
             //Waiting for just sended email
             Thread.Sleep(20000);
@@ -26,7 +26,7 @@ namespace GmailUITest
             catch (NoSuchElementException ex)
             {
                 Console.WriteLine(ex);
-                Console.WriteLine("Web element doesn't excist!");
+                Console.WriteLine("Web element(message) doesn't excist!");
                 PropertiesCollection.driver.Quit();
             }
         }
